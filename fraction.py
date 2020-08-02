@@ -99,7 +99,11 @@ class Fraction():
 				self.a /= i + 1
 				self.b /= i + 1
 
-a = Fraction(-85, 34)
-b = Fraction(1, 2)
-a.reduce()
-print(a)
+			i += 6
+
+		return self
+
+if __name__ == '__main__':
+	a = Fraction(-85, 34)
+	b = Fraction(1, 3)
+	print(abs(-a.reduce()) % b)
